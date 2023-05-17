@@ -2,7 +2,7 @@
 
 Tutorial on how to apply changes using pokeemerald decomp so that items picked up by the ability Pickup go directly to the player's bag.
 
-In [src/battle_script_commands.c](https://github.com/pret/pokeemerald/blob/master/src/battle_script_commands.c) , before the declaration of the function cmd_pickup around line 9553 you need to add the folowing function
+In [src/battle_script_commands.c](https://github.com/pret/pokeemerald/blob/master/src/battle_script_commands.c) , before the declaration of the function cmd_pickup around line 9553 you need to add the following function
 
 ```c
 static void AutoPickup(struct Pokemon *mon) {
