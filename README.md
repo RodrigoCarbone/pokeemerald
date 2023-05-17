@@ -1,6 +1,6 @@
 # Auto Pickup
 
-This is a decompilation of Pokémon Emerald.
+Tutorial on how to apply changes using pokeemerald decomp so that items picked up by the ability Pickup go directly to the player's bag.
 
 In [src/battle_script_commands.c](https://github.com/pret/pokeemerald/blob/master/src/battle_script_commands.c) , before the declaration of the function cmd_pickup around line 9553 you need to add the folowing function
 
@@ -32,7 +32,7 @@ Then inside the function cmd_pickup you need to call the function that we just a
             break;
         }
     }
-    +AutoPickup(&gPlayerParty[i]);
++    AutoPickup(&gPlayerParty[i]);
 }
 
 ```
